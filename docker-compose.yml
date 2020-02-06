@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+    moviesinfo:
+        image: moviesinfo:dev
+        build:
+          context: .
+          dockerfile: MoviesInfo/Dockerfile
+        depends_on:
+            - sql1

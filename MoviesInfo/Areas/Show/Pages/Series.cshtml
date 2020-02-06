@@ -1,0 +1,68 @@
+﻿@page
+@model MoviesInfo.Areas.Show.Pages.SeriesModel
+@{
+    ViewData["Title"] = "Series";
+    ViewData["Header"] = "Series";
+}
+
+<div class="container p-0 mb-4">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Show" asp-page="/More">More details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" asp-area="Show" asp-page="/Series">Series</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container p-0">
+    <table class="table border border-dark mb-0">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Number</th>
+                <th scope="col">Episode Name</th>
+                <th scope="col">Airdate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table border border-dark">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Number</th>
+                <th scope="col">Episode Name</th>
+                <th scope="col">Airdate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

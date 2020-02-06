@@ -1,0 +1,7 @@
+C:\Users\Maksym\source\repos\movies_info\bin\Debug\MoviesInfo.Views.dll
+C:\Users\Maksym\source\repos\movies_info\bin\Debug\MoviesInfo.Views.pdb
+C:\Users\Maksym\source\repos\movies_info\bin\Debug\MoviesInfo.dll
+C:\Users\Maksym\source\repos\movies_info\bin\Debug\MoviesInfo.pdb
+C:\Users\Maksym\source\repos\movies_info\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\Users\Maksym\source\repos\movies_info\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\Maksym\source\repos\movies_info\obj\Debug\docker-compose.dcproj.CopyComplete

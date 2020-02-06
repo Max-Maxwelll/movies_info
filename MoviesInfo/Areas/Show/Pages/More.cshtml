@@ -1,0 +1,72 @@
+﻿@page
+@model MoviesInfo.Areas.Show.Pages.MoreModel
+@{
+    ViewData["Title"] = "More";
+    ViewData["Header"] = "More details";
+}
+
+<div class="container p-0 mb-4">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" asp-area="Show" asp-page="/More">More details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Show" asp-page="/Series">Series</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container p-0 d-flex align-content-stretch mb-4">
+    <div class="flex-grow-0 mr-2">
+        <img class="border border-primary rounded" src="~/images/1.jpg"/>
+    </div>
+    <div class="card border-dark flex-grow-1">
+        <div class="card-header bg-dark">
+            <h3 class="card-title text-white mb-0">Name</h3>
+        </div>
+        <div class="card-body">
+            dasdasdasdasdasdasdasdasdasdasdasdas
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-success">Follow</button>
+        </div>
+    </div>
+</div>
+
+<div class="container p-0 mb-4">
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Show Info</li>
+        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+    </ul>
+</div>
+
+<div class="container p-0">
+    <table class="table border border-dark">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Number</th>
+                <th scope="col">Episode Name</th>
+                <th scope="col">Airdate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Dsdss</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

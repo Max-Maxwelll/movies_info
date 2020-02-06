@@ -1,3 +1,45 @@
 D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.csproj.CoreCompileInputs.cache
 D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfoInputs.cache
 D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfo.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.deps.json
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.runtimeconfig.json
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.runtimeconfig.dev.json
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.dll
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.pdb
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.Views.dll
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\bin\Debug\netcoreapp2.2\MoviesInfo.Views.pdb
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.csproj.CoreCompileInputs.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.RazorAssemblyInfo.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.RazorAssemblyInfo.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfoInputs.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfo.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.TagHelpers.input.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.TagHelpers.output.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.RazorCoreGenerate.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.RazorTargetAssemblyInfo.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.RazorTargetAssemblyInfo.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.Views.pdb
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.dll
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.pdb
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.csproj.CopyComplete
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.csprojAssemblyReference.cache
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Show\Pages\More.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Show\Pages\Series.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\User\Pages\Favorites.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Pages\Show\New.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Admin\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Show\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\Show\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\User\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Maksym\source\repos\movies_info\MoviesInfo\obj\Debug\netcoreapp2.2\Razor\Areas\User\Pages\_ViewStart.g.cshtml.cs

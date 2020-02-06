@@ -1,0 +1,25 @@
+﻿@page
+@model MoviesInfo.Areas.User.Pages.FavoritesModel
+@{
+    ViewData["Title"] = "Favorites";
+    ViewData["Header"] = "Favorites shows";
+}
+
+<div class="container p-0 d-flex align-content-stretch mb-4">
+    <div class="flex-grow-0 mr-2">
+        <img class="border border-primary rounded" src="~/images/1.jpg" />
+    </div>
+    <div class="card border-dark flex-grow-1">
+        <div class="card-header bg-dark">
+            <h3 class="card-title text-white mb-0">Name</h3>
+        </div>
+        <div class="card-body">
+            dasdasdasdasdasdasdasdasdasdasdasdas
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <button class="btn btn-danger">Unfollow</button>
+            <a class="page-link" asp-area="Show" asp-page="/More">More details</a>
+        </div>
+    </div>
+</div>
+

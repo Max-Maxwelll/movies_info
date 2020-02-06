@@ -1,0 +1,27 @@
+services:
+  moviesinfo:
+    build:
+      context: C:\Users\Maksym\source\repos\movies_info
+      dockerfile: MoviesInfo/Dockerfile
+    depends_on:
+    - sql1
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTPS_PORT: '5000'
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: moviesinfo:dev
+    ports:
+    - published: 5000
+      target: 443
+    volumes:
+    - C:\Users\Maksym\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Maksym\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  sql1:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Klass555
+    image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    ports:
+    - published: 1433
+      target: 1433
+version: '3.4'
