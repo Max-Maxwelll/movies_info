@@ -1,0 +1,3 @@
+D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.csproj.CoreCompileInputs.cache
+D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfoInputs.cache
+D:\Программы\OneDrive - Одеський національний політехнічний університет\VSProjects\MoviesInfo\MoviesInfo\obj\Debug\netcoreapp2.2\MoviesInfo.AssemblyInfo.cs
