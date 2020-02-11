@@ -5,60 +5,22 @@
     ViewData["Header"] = "All shows";
 }
 <div class="card-columns">
-    <div class="card">
-        <img src="~/images/1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Название карточки</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    @foreach (var item in Model.ShowModel)
+    {
+        <div class="card">
+            <img src="@Html.DisplayFor(modelItem => item.Portrait)" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                @if (Model.Favorites?.FirstOrDefault(f => f.ShowId == item.Id) != null)
+                {
+                    <span class="badge badge-primary p-1">Favorite</span>
+                }
+                <a class="card-link" asp-area="Show" asp-page="/More" asp-route-id="@item.Id">More details</a>
+            </div>
         </div>
-        <div class="card-footer d-flex justify-content-between">
-            <span class="badge badge-primary p-1">Favorite</span>
-            <a class="card-link" asp-area="Show" asp-page="/More">More details</a>
-        </div>
-    </div>
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Название карточки</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <div class="card-footer d-flex justify-content-end">
-            <a class="card-link" asp-area="Show" asp-page="/More">More details</a>
-        </div>
-    </div>
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Название карточки</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <div class="card-footer d-flex justify-content-end">
-            <a class="card-link" asp-area="Show" asp-page="/More">More details</a>
-        </div>
-    </div>
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Название карточки</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <div class="card-footer d-flex justify-content-end">
-            <a class="card-link" asp-area="Show" asp-page="/More">More details</a>
-        </div>
-    </div>
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Название карточки</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-        <div class="card-footer d-flex justify-content-end">
-            <a class="card-link" asp-area="Show" asp-page="/More">More details</a>
-        </div>
-    </div>
+    }
 </div>

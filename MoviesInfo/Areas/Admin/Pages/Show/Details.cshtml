@@ -1,0 +1,103 @@
+﻿@page
+@model MoviesInfo.Areas.Admin.Pages.Show.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    ViewData["Header"] = "Details " + Model.ShowModel.Name;
+}
+
+<div class="card mb-4">
+    <div class="row card-body">
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Name)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Name)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Description)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Description)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Portrait)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Portrait)
+        </div>
+
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Details.Network)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Details.Network)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Details.Schedule)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Details.Schedule)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Details.Genres)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Details.Genres)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Details.Developer)
+        </div>
+        <div class="col-sm-10">
+        @Html.DisplayFor(model => model.ShowModel.Details.Developer)
+    </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <a class="page-link" asp-page="./Index">Back to List</a>
+        <button class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.ShowModel.Id">Edit</button>
+    </div>
+</div>
+
+<table class="table border border-dark">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                Season
+            </th>
+            <th>
+                Episode Number
+            </th>
+            <th>
+                Episode Name
+            </th>
+            <th>
+                Airdate
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.EpisodeModel)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Season)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EpisodeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AirDate)
+                </td>
+                <td class="d-flex justify-content-end p-1">
+                    <a class="page-link" asp-page="/Episode/Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="page-link" asp-page="/Episode/Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

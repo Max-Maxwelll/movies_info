@@ -36,11 +36,9 @@
                             <a class="nav-link text-white-50" asp-area="User" asp-page="/Favorites">Favorites</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" asp-area="Show" asp-page="/More">More</a>
+                            <a class="nav-link text-white-50" asp-area="Admin" asp-page="/Show/Index">Admin</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white-50" asp-area="Admin" asp-page="/Show/New">New</a>
-                        </li>
+
                         @*<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>*@
@@ -51,9 +49,9 @@
         <nav class="navbar navbar-light border-bottom mb-4">
             <div class="container">
                 <span class="navbar-brand text-black-50">Find your show now</span>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
+                <form class="form-inline" asp-page="/Index" method="get">
+                    <input class="form-control mr-sm-2" type="search" name="SearchString" placeholder="Search" aria-label="Search">
+                    <input class="btn btn-primary" type="submit" value="Search"/>
                 </form>
             </div>
         </nav>

@@ -1,0 +1,48 @@
+﻿@page
+@model MoviesInfo.Areas.Admin.Pages.Episode.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    ViewData["Header"] = "New Episode";
+}
+<div class="row">
+    <div class="col-md-4">
+        <form class="card" method="post">
+            <div class="card-header">
+                New Episode
+            </div>
+            <div class="card-body">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="EpisodeModel.ShowId" />
+                <div class="form-group">
+                    <label asp-for="EpisodeModel.Season" class="control-label"></label>
+                    <input asp-for="EpisodeModel.Season" class="form-control" />
+                    <span asp-validation-for="EpisodeModel.Season" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EpisodeModel.Number" class="control-label"></label>
+                    <input asp-for="EpisodeModel.Number" class="form-control" />
+                    <span asp-validation-for="EpisodeModel.Number" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EpisodeModel.EpisodeName" class="control-label"></label>
+                    <input asp-for="EpisodeModel.EpisodeName" class="form-control" />
+                    <span asp-validation-for="EpisodeModel.EpisodeName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EpisodeModel.AirDate" class="control-label"></label>
+                    <input type="datetime-local" asp-for="EpisodeModel.AirDate" class="form-control" />
+                    <span asp-validation-for="EpisodeModel.AirDate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <a class="page-link" asp-page="/Show/Details" asp-route-id="@Model.EpisodeModel.ShowId">Back to List</a>
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -18,32 +18,66 @@
 
 <div class="container p-0 d-flex align-content-stretch mb-4">
     <div class="flex-grow-0 mr-2">
-        <img class="border border-primary rounded" src="~/images/1.jpg"/>
+        <img class="border border-primary rounded" style="max-height:400px;" src="@Html.DisplayFor(model => model.ShowModel.Portrait)"/>
     </div>
     <div class="card border-dark flex-grow-1">
         <div class="card-header bg-dark">
-            <h3 class="card-title text-white mb-0">Name</h3>
+            <h3 class="card-title text-white mb-0">@Html.DisplayFor(model => model.ShowModel.Name)</h3>
         </div>
         <div class="card-body">
-            dasdasdasdasdasdasdasdasdasdasdasdas
+            @Html.DisplayFor(model => model.ShowModel.Description)
         </div>
-        <div class="card-footer">
-            <button class="btn btn-success">Follow</button>
-        </div>
+        <form class="card-footer" method="post">
+            <input type="hidden" asp-for="ShowModel.Id" name="showId" />
+            @if (Model.IsFollow)
+            {
+                <span class="btn btn-secondary">Following</span>
+            }
+            else
+            {
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <button class="btn btn-success" asp-page-handler="Follow">Follow</button>
+                }
+                else
+                {
+                    <button class="btn btn-success" disabled asp-page-handler="Follow">Follow</button>
+                }
+            }
+        </form>
     </div>
 </div>
 
 <div class="container p-0 mb-4">
     <ul class="list-group">
         <li class="list-group-item list-group-item-primary">Show Info</li>
-        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
-        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
-        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
-        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
-        <li class="list-group-item list-group-item-light">Элемент основной группы списков</li>
+        @if (Model.ShowModel.Details.Network != null)
+        {
+            <li class="list-group-item list-group-item-light">
+                <b>@Html.DisplayNameFor(model => model.ShowModel.Details.Network)</b>
+                @Html.DisplayFor(model => model.ShowModel.Details.Network)
+            </li>
+        }
+        @if (Model.ShowModel.Details.Schedule != null)
+        {
+            <li class="list-group-item list-group-item-light">
+                <b>@Html.DisplayNameFor(model => model.ShowModel.Details.Schedule)</b>
+                @Html.DisplayFor(model => model.ShowModel.Details.Schedule)
+            </li>
+        }
+        <li class="list-group-item list-group-item-light">
+            <b>@Html.DisplayNameFor(model => model.ShowModel.Details.Genres)</b>
+            @Html.DisplayFor(model => model.ShowModel.Details.Genres)
+        </li>
+        <li class="list-group-item list-group-item-light">
+            <b>@Html.DisplayNameFor(model => model.ShowModel.Details.Developer)</b>
+            @Html.DisplayFor(model => model.ShowModel.Details.Developer)
+        </li>
     </ul>
 </div>
 
+@if(Model.ShowModel.Episodes.Count > 0)
+{
 <div class="container p-0">
     <table class="table border border-dark">
         <thead class="thead-dark">
@@ -52,21 +86,32 @@
                 <th scope="col">Number</th>
                 <th scope="col">Episode Name</th>
                 <th scope="col">Airdate</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>Dsdss</td>
-            </tr>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>Dsdss</td>
-            </tr>
+            @foreach (var item in Model.ShowModel.Episodes)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Season)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Number)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EpisodeName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AirDate)
+                    </td>
+                    <td class="d-flex justify-content-end p-1">
+                        <a class="page-link" asp-page="/Episode/Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="page-link" asp-page="/Episode/Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>
+}

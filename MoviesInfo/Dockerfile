@@ -8,6 +8,7 @@ WORKDIR /src
 COPY MoviesInfo/MoviesInfo.csproj MoviesInfo/
 RUN dotnet restore MoviesInfo/MoviesInfo.csproj
 COPY . .
+
 WORKDIR /src/MoviesInfo
 RUN dotnet build MoviesInfo.csproj -c Release -o /app
 

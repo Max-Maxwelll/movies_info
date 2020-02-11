@@ -1,0 +1,30 @@
+﻿@page
+@model MoviesInfo.Areas.Admin.Pages.Show.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["Header"] = "Show List";
+}
+
+<p class="d-flex">
+    <a class="page-link" asp-page="Create">Create Show</a>
+    @*<a class="page-link" asp-area="Admin" asp-page="/Episode/Index">Create Episode</a>*@
+</p>
+<div class="card-columns">
+    @foreach (var item in Model.ShowModel)
+    {
+    <div class="card border border-dark">
+        <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Portrait)" />
+        <h3 class="bg-dark text-white p-3">@Html.DisplayFor(modelItem => item.Name)</h3>
+        <div class="card-body">
+            @Html.DisplayFor(modelItem => item.Description)
+        </div>
+        <div class="card-footer text-center">
+            <a class="page-link" asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+            <a class="page-link" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+            <a class="page-link" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            <a class="page-link" asp-area="Admin" asp-page="/Episode/Create" asp-route-id="@item.Id">Add Episode</a>
+        </div>
+    </div>
+    }
+</div>

@@ -1,0 +1,69 @@
+﻿@page
+@model MoviesInfo.Areas.Admin.Pages.Show.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    ViewData["Header"] = "Create Show";
+
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form class="card" enctype="multipart/form-data" method="post">
+            <div class="card-body">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Name" class="control-label"></label>
+                    <input asp-for="ShowModel.Name" class="form-control" />
+                    <span asp-validation-for="ShowModel.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Portrait" class="control-label"></label>
+                    
+                    <div class="custom-file">
+                        <label class="custom-file-label">Choose file</label>
+                        <input type="file" class="custom-file-input" asp-for="PortaritFile" />
+                    </div>
+                    <span asp-validation-for="PortaritFile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Description" class="control-label"></label>
+                    <textarea asp-for="ShowModel.Description" class="form-control"> </textarea>
+                    <span asp-validation-for="ShowModel.Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Details.Network" class="control-label"></label>
+                    <input asp-for="ShowModel.Details.Network" class="form-control" placeholder="HBO" />
+                    <span asp-validation-for="ShowModel.Details.Network" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Details.Schedule" class="control-label"></label>
+                    <input type="text" asp-for="ShowModel.Details.Schedule" class="form-control" />
+                    <span asp-validation-for="ShowModel.Details.Schedule" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Details.Genres" class="control-label"></label>
+                    <input asp-for="ShowModel.Details.Genres" class="form-control" placeholder="Drama, Action, ..."> </input>
+                    <span asp-validation-for="ShowModel.Details.Genres" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ShowModel.Details.Developer" class="control-label"></label>
+                    <input asp-for="ShowModel.Details.Developer" class="form-control" placeholder="Max Maxwell"> </input>
+                    <span asp-validation-for="ShowModel.Details.Developer" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <a class="page-link" asp-page="Index">Back to List</a>
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+   
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

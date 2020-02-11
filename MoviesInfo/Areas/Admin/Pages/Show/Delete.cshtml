@@ -1,0 +1,37 @@
+﻿@page
+@model MoviesInfo.Areas.Admin.Pages.Show.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="card border-danger">
+    <div class="card-header bg-danger border border-danger text-white">
+        <span>Are you sure you want to delete this?</span>
+    </div>
+    <div class="row card-body">
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Name)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Name)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Description)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Description)
+        </div>
+        <div class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ShowModel.Portrait)
+        </div>
+        <div class="col-sm-10">
+            @Html.DisplayFor(model => model.ShowModel.Portrait)
+        </div>
+    </div>
+    <form class="card-footer d-flex justify-content-between" method="post">
+        <input type="hidden" asp-for="ShowModel.Id" />
+        <a class="page-link" asp-page="./Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </form>
+</div>

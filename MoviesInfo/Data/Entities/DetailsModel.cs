@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MoviesInfo.Data.Models
+namespace MoviesInfo.Data.Entities
 {
     public class DetailsModel
     {
         public int Id { get; set; }
-        public int ShowId { get; set; }
         public string Network { get; set; }
         public string Schedule { get; set; }
-        public IEnumerable<string> Genres { get; set; }
+        [Required]
+        public string Genres { get; set; }
+        [Required]
         public string Developer { get; set; }
     }
 }
